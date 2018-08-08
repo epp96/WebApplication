@@ -7,10 +7,11 @@
 
 
 <body>
-	
+
+<!-- Add in DB logo  -->
 <img src="db.gif" alt="DB Icon" style="width:128px;height:128px;" id = "dbimage">
 
-
+<!-- Form required for User Login  -->
 <div class="login">
 	<h1>Investment Services Login</h1>
     <form method="post">
@@ -22,6 +23,7 @@
 
 <script>
 
+// Function is to make password invisible to users
 function staroutpassword() {
     var x = document.getElementById("password");
     if (x.type === "password") {
@@ -35,13 +37,14 @@ function staroutpassword() {
 var a = document.getElementById("submit");
 var username;
 var password;
+
+// When button is clicked take user input and store in variable username and password
 a.addEventListener("click",function(){
     username = document.getElementById("username").value;
 	password = document.getElementById("password").value;
 },false);
 
 </script>
-
 
 
 </body></html>
