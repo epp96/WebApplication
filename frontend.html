@@ -22,6 +22,16 @@
 
 <script>
 
+function staroutpassword() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
+
 var a = document.getElementById("submit");
 var username;
 var password;
