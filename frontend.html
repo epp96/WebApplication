@@ -1,0 +1,37 @@
+
+<!DOCTYPE html><html lang='en' class=''>
+	
+<head>
+	<link rel="stylesheet" href="webapp.css">
+</head>
+
+
+<body>
+	
+<img src="db.gif" alt="DB Icon" style="width:128px;height:128px;" id = "dbimage">
+
+
+<div class="login">
+	<h1>Investment Services Login</h1>
+    <form method="post">
+    	<input type="text" id = "username" name="u" placeholder="Username" required="required" />
+        <input type="password" id = "password" name="p" placeholder="Password" required="required" />
+		<button  id = "submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+</div>
+
+<script>
+
+var a = document.getElementById("submit");
+var username;
+var password;
+a.addEventListener("click",function(){
+    username = document.getElementById("username").value;
+	password = document.getElementById("password").value;
+},false);
+
+</script>
+
+
+
+</body></html>
